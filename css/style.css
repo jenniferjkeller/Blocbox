@@ -42,11 +42,44 @@ html, body{
     margin:0 2% 20px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 350px) {
    .container {
-     width: 750px;
+     width: 338px;
    }
+
+   header .container > .one-half {
+     max-width: 46%;
+     display: inline-block;
+   }
+
+   .one-half > ul {
+    margin: 0px;
+    padding-left: 0px;
+    float: right;
+      }
+
+    .one-half > ul > li {
+      float: left;
+      margin: 3px;
+    }
+
+ h1.animated.fadeIn {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 15px 0 0;
+      }
+
+  header .hero img {
+    max-width: 100%;
+  }
  }
+
+ @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
  @media (min-width: 992px) {
    .container {
      width: 970px;
