@@ -57,20 +57,29 @@ html, body{
     padding-left: 0px;
     float: right;
       }
-
-    .one-half > ul > li {
+  .one-half > ul > li {
       float: left;
       margin: 3px;
     }
-
  h1.animated.fadeIn {
     font-size: 48px;
     font-weight: normal;
     margin: 15px 0 0;
       }
-
   header .hero img {
     max-width: 100%;
+  }
+  .left-footer-block.one-third {
+    margin-bottom: 0px;
+  }
+  .link-block.middle-footer-block.one-third {
+    margin-bottom: 0px;
+  }
+  .right-footer-block.one-third {
+    padding-top: 0px;
+  }
+  .logo {
+    padding-top: 0px;
   }
  }
 
@@ -81,6 +90,9 @@ html, body{
   div.one-half > li {
     margin-right: 15px;
     margin-top: 15px;
+  }
+  .right-footer-block.one-third {
+    padding-top: 20px;
   }
 }
 
@@ -97,6 +109,13 @@ html, body{
    .one-fourth {
      width:21%;
    }
+   .stagger {
+     margin-top: 20px;
+   }
+   .right-footer-block.one-third{
+     background-color: transparent;
+   }
+}
 
  }
  @media (min-width: 1200px) {
@@ -104,14 +123,7 @@ html, body{
      width: 1170px;
    }
  }
- @media max-width: 991px) {
-   img.logo {
-     padding-top: 0px;
-   }
-   li.one-fourth.stagger {
-     margin: 20px;
-   }
-}
+
 
 
  /* HEADER */
@@ -148,6 +160,9 @@ html, body{
  }
  header nav ul > li.btn-outline:hover > a {
    color:#34495E;
+ }
+ header nav ul > li.in {
+   margin-top: 15px;
  }
  header .hero {
    text-align: center;
@@ -212,12 +227,11 @@ html, body{
 
  /* PRICING */
  .pricing {
-
- background: url("../images/background.png") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
- background: #34495E url("../images/background.png") top center no-repeat;
- background-size:cover;
- text-align: center;
- padding:4em 0;
+   background: #34495E url("../images/blocbox_background.png") top center no-repeat;
+   background: url("../images/blocbox_background.png") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background-size:cover;
+   text-align: center;
+   padding:4em 0;
 }
 
   .pricing h2, .pricing p {
@@ -350,6 +364,8 @@ html, body{
   margin-top: 30px;
 }
 
+
+
 /* CTA */
 
 .cta {
@@ -391,7 +407,7 @@ footer .right-footer-block {
   background-color: transparent;
 }
 footer .logo{
-  padding: 2.35em 0;
+  padding-top: 20px;
   margin: 0 auto;
   display: block;
 }
