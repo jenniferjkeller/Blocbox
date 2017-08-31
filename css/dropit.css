@@ -25,9 +25,10 @@ ul#dropup.setmenu.dropit-submenu.dropit  {
     display: inline-block;
     min-width: 100px;
     list-style: none;
-    padding: 20px;
-    margin: 20px 0 0;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 15px;
     bottom: 100%;
+    width: 150px;
 }
 .dropit .dropit-submenu {
     position: absolute;
@@ -54,26 +55,36 @@ ul#dropup.setmenu.dropit-submenu.dropit  {
   display: block;
   width: 0;
   z-index: 1;
-  top: 153px;
+  top: -10px;
   right: 10px;
-  transform: rotate(180deg);
+
  }
-ul#dropup.dropit .dropit-open .dropit-submenu:after {
+#dropup:after {
    content: " ";
    position: absolute;
    border-style: solid;
    border-width: 0 8px 8px;
    border-color: #FFFFFF transparent;
    display: block;
-   width: 0;
+   width: 0px;
    z-index: 1000;
-   top: -100px;
+   top: 158px;
    right: 10px;
-
+   transform: rotate(180deg);
   }
+  a#dropup {
+    margin-top: 0px;
+  }
+.setmenu.dropit {
+    margin-top: 10px;
+  }
+
  .dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
+ }
+ #dropup li {
+   display: inline-grid;
  }
  .dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
